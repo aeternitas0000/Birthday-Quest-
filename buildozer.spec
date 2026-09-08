@@ -8,7 +8,7 @@ source.include_exts = py,png,jpg,mp3,wav
 
 version = 0.1
 
-requirements = python3==3.14,pygame,pyjnius
+requirements = python3==3.14.2,pygame,pyjnius
 
 orientation = landscape
 fullscreen = 1
