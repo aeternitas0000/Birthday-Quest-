@@ -8,7 +8,9 @@ source.include_exts = py,png,jpg,mp3,wav
 
 version = 0.1
 
-requirements = python3==3.11.8,pygame==2.5.2,pyjnius==1.5.0
+# Use python3.11 without pinning to specific patch version
+# This allows p4a to manage compatible versions
+requirements = python3,pygame==2.5.2,pyjnius
 
 orientation = landscape
 fullscreen = 1
@@ -26,6 +28,12 @@ p4a.bootstrap = sdl2
 
 # Icon and presplash
 android.presplash_lottie = 1
+
+# Explicitly set Python version for consistency
+p4a.python_version = 3.11
+
+# Disable version check conflicts
+p4a.ignore_setup_py = 1
 
 [buildozer]
 log_level = 2
