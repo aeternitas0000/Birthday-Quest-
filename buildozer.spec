@@ -10,7 +10,8 @@ version = 0.1
 
 # Use python3.11 without pinning to specific patch version
 # This allows p4a to manage compatible versions
-requirements = python3,pygame==2.5.2,pyjnius
+# Include cython for pygame compilation
+requirements = python3,cython,pygame==2.5.2,pyjnius
 
 orientation = landscape
 fullscreen = 1
