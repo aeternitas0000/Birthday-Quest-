@@ -8,7 +8,8 @@ source.include_exts = py,png,jpg,mp3,wav
 
 version = 0.1
 
-requirements = python3,pygame
+# In buildozer.spec
+requirements = python3==3.12,pygame
 
 orientation = landscape
 fullscreen = 0
