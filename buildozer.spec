@@ -8,10 +8,10 @@ source.include_exts = py,png,jpg,mp3,wav
 
 version = 0.1
 
-# Use python3.11 without pinning to specific patch version
-# This allows p4a to manage compatible versions
-# Include cython for pygame compilation
-requirements = python3,cython,pygame==2.5.2,pyjnius
+# Use python3.11 for better compatibility with Cython and pygame
+# Removed pyjnius due to compatibility issues with Cython compilation
+# If JNI functionality is needed, add it back after resolving Cython issues
+requirements = python3,cython,pygame==2.5.2
 
 orientation = landscape
 fullscreen = 1
@@ -30,7 +30,7 @@ p4a.bootstrap = sdl2
 # Icon and presplash
 android.presplash_lottie = 1
 
-# Explicitly set Python version for consistency
+# Use Python 3.11 for better compatibility with Cython
 p4a.python_version = 3.11
 
 # Disable version check conflicts
